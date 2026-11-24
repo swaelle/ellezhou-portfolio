@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elle Zhou</title>
+<meta name="description" content="Elle (Chenxin) Zhou, a multidisciplinary designer working at the intersection of design, technology, and business.">
+<style>
+body{margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:#111}a:hover{color:#555}
+.nav-a{color:#FFFFFF;text-decoration:none;transition:opacity .25s ease}.nav-a:hover{color:#FFFFFF;opacity:.65}
+.top-nav:focus-within{transform:translateY(0) !important}
+button{font-family:inherit;color:inherit}
+button:focus-visible{outline:2px solid #111;outline-offset:4px}
+@keyframes fp-rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fp-slide{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fp-draw{to{stroke-dashoffset:0}}
+@keyframes fp-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes fp-fade{from{opacity:0}to{opacity:1}}
+.fp-slide{display:inline-block;animation:fp-slide .9s cubic-bezier(.2,.7,.1,1) both}
+.fp-rise{animation:fp-rise .9s cubic-bezier(.2,.7,.1,1) both}
+.fp-fade{animation:fp-fade 1.2s ease both}
+.fp-draw > *{stroke-dasharray:1;stroke-dashoffset:1;animation:fp-draw 1.6s cubic-bezier(.6,0,.2,1) forwards}
+.fp-draw > *:nth-child(2){animation-delay:.25s}
+.fp-draw > *:nth-child(3){animation-delay:.45s}
+.fp-draw > *:nth-child(4){animation-delay:.6s}
+.fp-draw > *:nth-child(5){animation-delay:.75s}
+.fp-draw > *:nth-child(6){animation-delay:.9s}
+.fp-bar{transform-origin:left center;animation:fp-grow .7s cubic-bezier(.2,.7,.1,1) both}
+.fp-dot{transition:transform .3s ease, background-color .3s ease}
+.fp-step:hover .fp-dot{transform:scale(1.18)}
+@media (prefers-reduced-motion: reduce){
+.fp-slide,.fp-rise,.fp-fade,.fp-bar{animation:none}
+.fp-draw > *{animation:none;stroke-dashoffset:0}
+}
+.ab-row{transition:background-color .5s cubic-bezier(.2,.7,.1,1),color .5s cubic-bezier(.2,.7,.1,1),transform .6s cubic-bezier(.2,.7,.1,1),box-shadow .6s ease;transform-origin:center}
+.ab-row:hover{background-color:#111111;color:#FFFFFF;transform:scale(1.045);box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
+@media (prefers-reduced-motion: reduce){.ab-row{transition:background-color .2s,color .2s}.ab-row:hover{transform:none}}
+</style>
+<script src="assets/site.js" defer></script>
+<script src="assets/home.js" defer></script>
+</head>
+<body>
+<div style="background-color: #FFFFFF; min-height: 100vh">
+<header class="top-nav" id="topnav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: #000000; color: #FFFFFF; transform: translateY(0); transition: transform .45s cubic-bezier(.2,.7,.1,1)">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; min-height: 64px; padding: 8px clamp(20px, 3vw, 40px); box-sizing: border-box">
+<a href="#top" class="nav-a" style="font-size: 22px; font-weight: 700; letter-spacing: -0.02em; min-height: 44px; display: flex; align-items: center">Elle Zhou</a>
+<div style="display: flex; flex-wrap: wrap; gap: 4px clamp(20px, 4vw, 72px); font-size: clamp(16px, 1.6vw, 24px); font-weight: 300">
+<a href="works.html" class="nav-a" style="min-height: 44px; display: flex; align-items: center">Works</a>
+<a href="#about" class="nav-a" style="min-height: 44px; display: flex; align-items: center">About Me</a>
+<a href="#contact" class="nav-a" style="min-height: 44px; display: flex; align-items: center">Contact</a>
+</div>
+</nav>
+</header>
+<section id="top" aria-label="Opening" style="position: relative; height: min(100vh, 1000px); min-height: 560px; overflow: hidden; background-color: #FFFFFF">
+<img src="assets/face.jpg" alt="" aria-hidden="true" width="2048" height="1423" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<canvas id="gl" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity .8s ease"></canvas>
+<h1 style="position: absolute; left: clamp(20px, 3vw, 40px); top: 50%; transform: translateY(-42%); margin: 0; color: #C8231A; font-size: clamp(56px, 9vw, 150px); line-height: 0.92; font-weight: 500; letter-spacing: -0.045em">Elle Zhou’s<br>Portfolio<br>Website 2026</h1>
+</section>
+
+<section id="about" aria-label="About">
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div style="max-width: 1400px; margin: 0 auto; padding: 80px clamp(20px, 4vw, 56px) 88px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 64px 72px; align-items: flex-start">
+
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 80px">
+<h1 style="margin: 0; max-width: 480px; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; font-weight: 700; letter-spacing: -0.025em">I’m a multidisciplinary builder, turning ideas into things you can see, feel, and interact with.</h1>
+
+<div style="display: flex; flex-wrap: wrap; gap: 32px 32px; align-items: flex-start">
+<img src="assets/portrait.jpg" alt="Black and white portrait of Chenxin (Elle) Zhou smiling" width="564" height="564" style="display: block; flex: 0 0 auto; width: 290px; max-width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 80px">
+<div style="display: flex; flex-direction: column; gap: 20px; max-width: 460px; font-size: 16px; line-height: 1.4; font-weight: 300">
+<p style="margin: 0">I’m <strong style="font-weight: 700">Chenxin (Elle) Zhou</strong>, a multidisciplinary designer working at the intersection of design, technology, and business.</p>
+<p style="margin: 0">Born and raised in Shanghai and now based in Los Angeles, I’ve found that moving between the two cities has shaped my interest in creating products and experiences that connect people, ideas, and everyday life in novel, bold, yet meaningful ways.</p>
+<p style="margin: 0">I look closely at nature and everyday interactions, asking why things work the way they do and exploring how they could be different. Through hands-on experimentation, I develop these questions into products, with care for the people who use them and the environments they become part of.</p>
+</div>
+<p style="margin: 0; max-width: 470px; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; font-weight: 700; letter-spacing: -0.025em">I love asking why, connecting ideas across fields, and untangling messy problems until they make sense.</p>
+</div>
+</div>
+</div>
+
+<ul aria-label="What I do" style="flex: 1 1 380px; max-width: 440px; min-width: 0; margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+<li class="ab-row" style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 22px 26px; border-radius: 36px">
+<span style="font-size: 16px; line-height: 1.4; font-weight: 400">Product Development</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 300">I develop products from initial research to working solutions, shaping form, function, and experience together.</span>
+</li>
+<li class="ab-row" style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 22px 26px; border-radius: 36px">
+<span style="font-size: 16px; line-height: 1.4; font-weight: 400">Design Strategy</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 300">I connect observations, question assumptions, and define directions with care for people and the environment.</span>
+</li>
+<li class="ab-row" style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 22px 26px; border-radius: 36px">
+<span style="font-size: 16px; line-height: 1.4; font-weight: 400">Creative Technology</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 300">I explore different mediums and technical approaches to find meaningful ways to address each problem.</span>
+</li>
+<li class="ab-row" style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 22px 26px; border-radius: 36px">
+<span style="font-size: 16px; line-height: 1.4; font-weight: 400">Rapid Prototyping</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 300">I test and refine ideas through sketching, Blender, 3D printing, Unity, and hardware prototyping.</span>
+</li>
+<li class="ab-row" style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 22px 26px; border-radius: 36px">
+<span style="font-size: 16px; line-height: 1.4; font-weight: 400">AI in my practice</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 300">I use AI to expand my capabilities and maximize efficiency while thinking critically and making deliberate, human-centered decisions.</span>
+</li>
+</ul>
+
+</div>
+</div>
+</section>
+<section id="five-phases" aria-label="Five Phases">
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div style="max-width: 1400px; margin: 0 auto; padding: 80px clamp(20px, 4vw, 56px) 72px; box-sizing: border-box; display: flex; flex-direction: column; gap: 64px">
+
+<p style="margin: 0; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.08; font-weight: 700; letter-spacing: -0.02em; max-width: 820px">Wood, fire, earth, metal, and water. The five phases of Chinese philosophy find patterns of change and connection in nature. I look to small details in nature to understand the larger world, bringing insights from different cultures into my design process to give ideas form.</p>
+
+
+<div class="fp-panel" data-i="0">
+<div style="display: flex; flex-direction: column; gap: 72px" aria-live="polite">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h1 style="margin: 0; padding-left: 8px; overflow: hidden; font-size: clamp(72px, 11vw, 168px); line-height: 1; font-weight: 700; letter-spacing: -0.05em"><span class="fp-slide">01 Wood</span></h1>
+<div style="display: flex; align-items: center; gap: 16px; padding-bottom: 14px">
+<span lang="zh" class="fp-rise" style="animation-delay: .2s; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">震</span>
+<div role="img" aria-label="Zhen trigram, thunder: one solid line below two broken lines" style="display: flex; flex-direction: column; gap: 8px">
+
+
+<div class="fp-bar" style="animation-delay: 0.65s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+
+<div class="fp-bar" style="animation-delay: 0.50s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+<div class="fp-bar" style="animation-delay: 0.35s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+</div>
+</div>
+</div>
+
+<main style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: flex-start">
+<img class="fp-fade" src="assets/phase-wood.webp" alt="A sprout with two leaves growing from the ground" width="640" height="640" style="display: block; width: 100%; max-width: 380px; height: auto; aspect-ratio: 1 / 1">
+
+
+
+
+</div>
+
+<div style="flex: 999 1 600px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 340px)); justify-content: end; gap: 40px 80px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .25s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Growth</h2>
+<p class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Wood evokes the energy of new growth, reaching toward light with openness and possibility. To me, it represents a beginning, still undefined and free to grow.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Problem & Curiosity</h2>
+<p class="fp-rise" style="animation-delay: .55s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">My design process begins with curiosity. I observe, listen, and ask questions to understand people’s needs, finding clues in small details that reveal a meaningful design challenge.</p>
+</div>
+</div>
+</main>
+
+</div>
+</div>
+
+<div class="fp-panel" data-i="1" hidden>
+<div style="display: flex; flex-direction: column; gap: 72px" aria-live="polite">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h1 style="margin: 0; padding-left: 8px; overflow: hidden; font-size: clamp(72px, 11vw, 168px); line-height: 1; font-weight: 700; letter-spacing: -0.05em"><span class="fp-slide">02 Fire</span></h1>
+<div style="display: flex; align-items: center; gap: 16px; padding-bottom: 14px">
+<span lang="zh" class="fp-rise" style="animation-delay: .2s; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">离</span>
+<div role="img" aria-label="Li trigram, fire: a broken line between two solid lines" style="display: flex; flex-direction: column; gap: 8px">
+
+<div class="fp-bar" style="animation-delay: 0.65s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+
+<div class="fp-bar" style="animation-delay: 0.50s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+<div class="fp-bar" style="animation-delay: 0.35s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+</div>
+</div>
+</div>
+
+<main style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: flex-start">
+
+<img class="fp-fade" src="assets/phase-fire.webp" alt="A red flame burns around the sprout as it grows into a young tree" width="640" height="640" style="display: block; width: 100%; max-width: 380px; height: auto; aspect-ratio: 1 / 1">
+
+
+
+</div>
+
+<div style="flex: 999 1 600px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 340px)); justify-content: end; gap: 40px 80px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .25s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Expansion</h2>
+<p class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Fire evokes the energy of summer, rising and spreading outward, bringing light and warmth to everything it touches. To me, it represents expansion, an idea opening up to the world.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Research & Understanding</h2>
+<p class="fp-rise" style="animation-delay: .55s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Once I find a challenge, I widen my view. Through interviews and secondary research, I try to see the whole picture, letting people’s stories and unexpected findings shape my understanding.</p>
+</div>
+</div>
+</main>
+
+</div>
+</div>
+
+<div class="fp-panel" data-i="2" hidden>
+<div style="display: flex; flex-direction: column; gap: 72px" aria-live="polite">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h1 style="margin: 0; padding-left: 8px; overflow: hidden; font-size: clamp(72px, 11vw, 168px); line-height: 1; font-weight: 700; letter-spacing: -0.05em"><span class="fp-slide">03 Earth</span></h1>
+<div style="display: flex; align-items: center; gap: 16px; padding-bottom: 14px">
+<span lang="zh" class="fp-rise" style="animation-delay: .2s; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">坤</span>
+<div role="img" aria-label="Kun trigram, earth: three broken lines" style="display: flex; flex-direction: column; gap: 8px">
+
+
+<div class="fp-bar" style="animation-delay: 0.65s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+
+<div class="fp-bar" style="animation-delay: 0.50s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+
+<div class="fp-bar" style="animation-delay: 0.35s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+</div>
+</div>
+</div>
+
+<main style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: flex-start">
+
+
+<img class="fp-fade" src="assets/phase-earth.webp" alt="The young tree thickens and sends roots down into the earth" width="640" height="640" style="display: block; width: 100%; max-width: 380px; height: auto; aspect-ratio: 1 / 1">
+
+
+</div>
+
+<div style="flex: 999 1 600px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 340px)); justify-content: end; gap: 40px 80px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .25s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Transformation</h2>
+<p class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Earth sits at the center, holding and nourishing everything around it. It is where change quietly happens. To me, it represents transformation, turning what is gathered into something new.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Insight & Possibility</h2>
+<p class="fp-rise" style="animation-delay: .55s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">I turn research into insight. Using How Might We and What If questions, I reframe problems as opportunities and let possibilities multiply before choosing a direction.</p>
+</div>
+</div>
+</main>
+
+</div>
+</div>
+
+<div class="fp-panel" data-i="3" hidden>
+<div style="display: flex; flex-direction: column; gap: 72px" aria-live="polite">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h1 style="margin: 0; padding-left: 8px; overflow: hidden; font-size: clamp(72px, 11vw, 168px); line-height: 1; font-weight: 700; letter-spacing: -0.05em"><span class="fp-slide">04 Metal</span></h1>
+<div style="display: flex; align-items: center; gap: 16px; padding-bottom: 14px">
+<span lang="zh" class="fp-rise" style="animation-delay: .2s; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">兑</span>
+<div role="img" aria-label="Dui trigram, lake: two solid lines below one broken line" style="display: flex; flex-direction: column; gap: 8px">
+
+
+<div class="fp-bar" style="animation-delay: 0.65s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+<div class="fp-bar" style="animation-delay: 0.50s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+<div class="fp-bar" style="animation-delay: 0.35s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+</div>
+</div>
+</div>
+
+<main style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: flex-start">
+
+
+
+<img class="fp-fade" src="assets/phase-metal.webp" alt="Flowers bloom across the branches of the grown tree" width="640" height="640" style="display: block; width: 100%; max-width: 380px; height: auto; aspect-ratio: 1 / 1">
+
+</div>
+
+<div style="flex: 999 1 600px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 340px)); justify-content: end; gap: 40px 80px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .25s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Refinement</h2>
+<p class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Metal evokes the clarity of autumn, when the harvest is gathered and what is not needed falls away. To me, it represents refinement, shaping something precise and strong.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Focus & Prototype</h2>
+<p class="fp-rise" style="animation-delay: .55s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">I converge on one solution and give it form. Through prototyping, I cut away what is unnecessary, so the idea that remains is clear and can stand on its own.</p>
+</div>
+</div>
+</main>
+
+</div>
+</div>
+
+<div class="fp-panel" data-i="4" hidden>
+<div style="display: flex; flex-direction: column; gap: 72px" aria-live="polite">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h1 style="margin: 0; padding-left: 8px; overflow: hidden; font-size: clamp(72px, 11vw, 168px); line-height: 1; font-weight: 700; letter-spacing: -0.05em"><span class="fp-slide">05 Water</span></h1>
+<div style="display: flex; align-items: center; gap: 16px; padding-bottom: 14px">
+<span lang="zh" class="fp-rise" style="animation-delay: .2s; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">坎</span>
+<div role="img" aria-label="Kan trigram, water: a solid line between two broken lines" style="display: flex; flex-direction: column; gap: 8px">
+
+
+<div class="fp-bar" style="animation-delay: 0.65s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+<div class="fp-bar" style="animation-delay: 0.50s; width: 66px; height: 10px; background-color: #111111"></div>
+
+
+
+<div class="fp-bar" style="animation-delay: 0.35s; width: 66px; height: 10px; display: flex; justify-content: space-between"><div style="width: 28px; height: 10px; background-color: #111111"></div><div style="width: 28px; height: 10px; background-color: #111111"></div></div>
+
+</div>
+</div>
+</div>
+
+<main style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: flex-start">
+
+
+
+
+<img class="fp-fade" src="assets/phase-water.webp" alt="A blue drop of water falls and the tree bears orange fruit" width="640" height="640" style="display: block; width: 100%; max-width: 380px; height: auto; aspect-ratio: 1 / 1">
+</div>
+
+<div style="flex: 999 1 600px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 340px)); justify-content: end; gap: 40px 80px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .25s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Reflection</h2>
+<p class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">Water evokes the stillness of winter, flowing downward and settling deep, keeping what the year has given. To me, it represents reflection, the quiet before something begins again.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: center; align-items: center">
+<h2 class="fp-rise" style="animation-delay: .4s; margin: 0; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.03em">Testing & Iteration</h2>
+<p class="fp-rise" style="animation-delay: .55s; margin: 0; font-size: 17px; line-height: 1.28; font-weight: 300; color: #1A1A1A; max-width: 320px">I test my ideas with people, gather feedback, and reflect on what I learn. Each insight becomes the seed of a new question, and the cycle returns to wood.</p>
+</div>
+</div>
+</main>
+
+</div>
+</div>
+
+
+<nav aria-label="Five phases" style="position: relative; display: flex; justify-content: space-between; padding-top: 8px">
+<div aria-hidden="true" style="position: absolute; left: 24px; right: 24px; top: 28px; height: 2px; background-color: #D9D9D9"></div>
+<div aria-hidden="true" style="position: absolute; left: 24px; right: 24px; top: 28px; height: 2px">
+<div id="fp-progress" style="height: 2px; width: 0%; background-color: #111111; transition: width .8s cubic-bezier(.2,.7,.1,1)"></div>
+</div>
+
+<button type="button" class="fp-step" aria-label="01 Wood" aria-pressed="true" style="position: relative; background: none; border: none; padding: 4px; width: 48px; min-height: 48px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="fp-dot" style="display: block; box-sizing: border-box; width: 34px; height: 34px; border-radius: 50%; border: 6px solid #111111; background-color: #FFFFFF"></span>
+<span lang="zh" style="font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap">木</span>
+</button>
+
+<button type="button" class="fp-step" aria-label="02 Fire" aria-pressed="false" style="position: relative; background: none; border: none; padding: 4px; width: 48px; min-height: 48px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="fp-dot" style="display: block; box-sizing: border-box; width: 34px; height: 34px; border-radius: 50%; border: 6px solid #111111; background-color: #111111"></span>
+<span lang="zh" style="font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap">火</span>
+</button>
+
+<button type="button" class="fp-step" aria-label="03 Earth" aria-pressed="false" style="position: relative; background: none; border: none; padding: 4px; width: 48px; min-height: 48px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="fp-dot" style="display: block; box-sizing: border-box; width: 34px; height: 34px; border-radius: 50%; border: 6px solid #111111; background-color: #111111"></span>
+<span lang="zh" style="font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap">土</span>
+</button>
+
+<button type="button" class="fp-step" aria-label="04 Metal" aria-pressed="false" style="position: relative; background: none; border: none; padding: 4px; width: 48px; min-height: 48px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="fp-dot" style="display: block; box-sizing: border-box; width: 34px; height: 34px; border-radius: 50%; border: 6px solid #111111; background-color: #111111"></span>
+<span lang="zh" style="font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap">金</span>
+</button>
+
+<button type="button" class="fp-step" aria-label="05 Water" aria-pressed="false" style="position: relative; background: none; border: none; padding: 4px; width: 48px; min-height: 48px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="fp-dot" style="display: block; box-sizing: border-box; width: 34px; height: 34px; border-radius: 50%; border: 6px solid #111111; background-color: #111111"></span>
+<span lang="zh" style="font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap">水</span>
+</button>
+
+</nav>
+
+</div>
+</div>
+</section>
+<section id="contact" aria-label="Contact" style="max-width: 1400px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 56px) 120px; box-sizing: border-box; border-top: 1px solid #E2E2E2; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 48px 72px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #555555">Contact</p>
+<h2 style="margin: 0; max-width: 820px; font-size: clamp(40px, 6vw, 88px); line-height: 0.95; font-weight: 700; letter-spacing: -0.045em">Let’s think a little longer together.</h2>
+</div>
+<ul aria-label="Ways to reach me" style="flex: 1 1 320px; max-width: 440px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 56px; border-top: 1px solid #E2E2E2"><span style="font-size: 15px; color: #555555">Email</span><a href="mailto:chenxin1zhou@gmail.com" style="font-size: 18px; font-weight: 300; overflow-wrap: anywhere">chenxin1zhou@gmail.com</a></li>
+<li style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 56px; border-top: 1px solid #E2E2E2"><span style="font-size: 15px; color: #555555">LinkedIn</span><a href="https://www.linkedin.com/in/chenxin-zhou-29baa532a" target="_blank" rel="noopener" style="font-size: 18px; font-weight: 300; overflow-wrap: anywhere">chenxin-zhou-29baa532a</a></li>
+<li style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 56px; border-top: 1px solid #E2E2E2"><span style="font-size: 15px; color: #555555">CV</span><a href="assets/ChenxinElleZhou_CV.pdf" download="ChenxinElleZhou_CV.pdf" target="_blank" rel="noopener" style="font-size: 18px; font-weight: 300">Download CV</a></li>
+<li style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 56px; border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2"><span style="font-size: 15px; color: #555555">Old site</span><a href="https://ellesportfolio.cargo.site/" target="_blank" rel="noopener" style="font-size: 18px; font-weight: 300">My old funny creative website</a></li>
+</ul>
+</section>
+<div aria-hidden="true" style="position: fixed; inset: 0; pointer-events: none; z-index: 9999; mix-blend-mode: multiply; isolation: isolate">
+<div aria-hidden="true" id="trail3" class="trail-dot" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background-color: #FF3B30; pointer-events: none; opacity: 0; transition: opacity .35s ease; will-change: transform"></div>
+<div aria-hidden="true" id="trail2" class="trail-dot" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background-color: #FF3B30; pointer-events: none; opacity: 0; transition: opacity .35s ease; will-change: transform"></div>
+<div aria-hidden="true" id="trail1" class="trail-dot" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background-color: #FF3B30; pointer-events: none; opacity: 0; transition: opacity .35s ease; will-change: transform"></div>
+<div aria-hidden="true" id="trail0" class="trail-dot" style="position: absolute; left: 0; top: 0; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%; background-color: #FF3B30; pointer-events: none; opacity: 0; transition: opacity .35s ease; will-change: transform"></div>
+</div>
+</div>
+</body>
+</html>
